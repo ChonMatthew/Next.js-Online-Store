@@ -2,13 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Instrument_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
+import Header from "@/components/ui/Header";
+import Footer from "@/components/ui/Footer";
 
-const instrumentSans = Instrument_Sans({subsets:['latin'],variable:'--font-sans'});
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
-  title: "Simple Next.js 13.4 E-Commerce Website",
-  description:
-    "A simple e-commerce website built with Next.js 13.4, showcasing products and allowing users to browse and purchase items online.",
+  title: "Moka Shop",
+  description: "A clothing online store for your deepest desires.",
 };
 
 export default function RootLayout({
@@ -18,7 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("font-sans", instrumentSans.variable)}>
-      <body className="font-poppins antialiased">{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
