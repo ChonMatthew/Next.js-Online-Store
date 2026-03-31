@@ -9,6 +9,7 @@
   --color-shop-light-gray: #d6d6d6;
   --color-shop-dark-gray: #141414;
   --color-shop-dark-red: #5e1f1c;
+  --color-shop-light-red: #f5c9c7;
   --color-alternative-gray: #e6e4e4;
 }
 
@@ -133,5 +134,8 @@
   }
   html {
     @apply font-sans;
+  }
+  .hoverEffect {
+    @apply transition-all duration-300 ease-in-out;
   }
 }
