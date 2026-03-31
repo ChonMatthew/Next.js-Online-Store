@@ -1,8 +1,9 @@
+import Container from "@/components/ui/Container";
 import React from "react";
 
 const Home = () => {
   return (
-    <div className="">
+    <Container className="">
       <h2 className="text-xl font-semibold">Home</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
@@ -12,7 +13,7 @@ const Home = () => {
         Omnis nulla magni eius sunt accusantium, fuga, fugit quo excepturi
         tempore laboriosam reiciendis sequi illo.
       </p>
-    </div>
+    </Container>
   );
 };
 
