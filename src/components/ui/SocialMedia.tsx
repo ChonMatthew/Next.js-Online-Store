@@ -42,7 +42,7 @@ const SocialMedia = ({
     <TooltipProvider>
       <div className={cn("flex items-center gap-3.5", className)}>
         {socialLinks.map((item) => (
-          <Tooltip key={item.title}>
+          <Tooltip key={item?.title}>
             <TooltipTrigger asChild>
               <Link
                 href={item?.href}

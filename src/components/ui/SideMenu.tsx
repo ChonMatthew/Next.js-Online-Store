@@ -36,6 +36,7 @@ const SideMenu: FC<SideMenuProps> = ({ isOpen, onClose }) => {
         <div className="flex flex-col space-y-3.5 font-semibold tracking-wide">
           {headerData?.map((item) => (
             <Link
+              onClick={onClose}
               href={item?.href}
               key={item?.title}
               className={`hover:text-shop-dark-red cursor-pointer hoverEffect ${pathname === item?.href ? "text-shop-dark-red" : ""}`}
